@@ -73,6 +73,12 @@ var PlayersData = [];
             return;
           }
 
+          //educational Validation
+          if (education.trim() === "") {
+            educationError.textContent = "Educational level is required";
+            return;
+          }
+
           // Create a player object
         var player = {
             firstName: firstName,
