@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Payback";
+    src:
+    local("Payback"),
+    url("./payback/PaybAck.ttf") format("truetype");
+}
+
+.welcome-text{
+    font-family: "Payback";
+    font-size: 6rem;
+    margin: 1.875rem 0.625rem;
+ }
+
+#container{
+    height: 100%;
+    width: 75%;
+    position:absolute;
+    right: 10%;   
+}
+
+#form{
+    background-image: linear-gradient(rgb(25, 25, 246), rgb(16, 6, 55));
+    height: 100%;
+    width: 30%;
+    position:relative
+}
+
+#Welcome{
+    background-color: black;
+    height: 100%;
+    width: 70%;
+    position: relative;
+    left:30%;
+    top:-100%
+}
+
+#Border{
+    position: relative;
+    border:3.125rem;
+    border-color:rgb(14, 128, 173);
+    border-width: 0.313rem;
+    background-color: none;
+    border-style:solid;
+    border-radius: 0.313rem;
+    height: 96%;
+    width: 96%;
+    top:1%;
+    left: 1%;
+}
+
+body{
+    background-color: skyblue;  
+}
+
+h1{
+    color:rgb(79, 195, 240) ;
+    font-family:fantasy;
+    font-size:0.625rem;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.Formh1{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#text-to{
+    background-color: azure;
+    width:90%;
+    position: relative;
+    left:5%;
+   
+}
+
+#SignUp{
+    font-size: 2.5rem;
+}
+
+#playerInformation{
+    margin-top: 50%;
+    font-size: large;
+}
+
+
+.Input{
+    margin-left: 1%;
+    border: none;
+    border-radius: 2%;
+    padding: 2%;
+    margin-bottom: 7%;
+    box-shadow: 0.313rem 0.313rem skyblue;
+}
+
+#dob{
+  width: 35%;
+  position: relative;
+  right: 5%;
+}
+
+#Age{
+    position: relative;
+    width: 35%;
+    margin-bottom: -50%;
+    margin-top: -15.7%;
+    left: 5%;
+    bottom: 70%;
+    box-sizing: border-box;
+}
+
+#addressh1{
+    margin-top: 1%;
+    margin-bottom: -2%;
+    font-size: large;
+    position: relative; 
+    top: -29%;
+}
+
+#address{
+    position: relative;
+    top: -3%;
+}
+
+#educationh1{
+    text-align: center;
+    margin-top: 5%;
+    font-size: large;
+    position: relative; 
+    top: -55%;
+}
+
+#education{
+    position: relative;
+    top: -55%;
+    margin-bottom: 10%;
+}
+
+
+
+#image{
+    width:35%;
+    background-color: azure;
+    position: absolute;
+    top:18%;
+    left: 29%;
+ }
+
+ #gender{
+    width: 20%;
+    font-size: 0.625rem;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+  
+ }
+
+#formInfo{
+    margin-top: -10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    text-align: center;
+}
+
+.tag{
+    position: absolute;
+   opacity: 0%;  
+}
+
+span{
+    color: red;
+ }
+
+.button:hover {
+    background-color: azure;
+    color:rgb(14, 128, 173);
+    
+} 
+
+.button{
+    padding: 0.625rem;
+    width: 25%;
+    color: skyblue;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.875rem;
+    border-radius: 10%;  
+}
+
+.play-end-box{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 3.125rem;
+
+}
+
+.result-box{
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+
+.reg-btn{
+    font-size: 1.2rem ;
+    width: 30%; 
+    padding: 5;
+    margin-bottom: 0.938rem;
+}

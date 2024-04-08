@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Indextest</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="indextest.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="form">
+                <!--Sign Up-->
+                <h1 id="SignUp" class="Formh1">Sign Up</h1>
+
+                <form id="playerForm" action="#" method="post">
+
+                    <div id="formInfo">  
+                    <!--picture drop-->                    
+                    <input type="file" id="image" class="Input" name="image"/>
+                  
+
+
+                    <!--Gender Checkbox-->
+                    <label for="gender" class="tag">Gender:</label>
+                    <select id="gender" class="Input" name="gender" required>
+                        <option value="">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                    <!--Error Message-->
+                    <span class="error" id="genderError"></span><br/>
+
+                    <!--Form Header-->
+                    <h1 id="playerInformation" class="Formh1">Player Information Form</h1>
+                    
+                    <!--Error massage-->
+                    <span class="error" id="firstNameError"></span><br/>
+                    
+                    <!--First name TextBox-->     
+                    <label for="firstName" class="tag">First Name:</label>         
+                    <input
+                    type="text"
+                    class="Input"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="First Name eg.'John'"
+                    required
+                    minlength="3"
+                    /><br/>
+                    
+                    <!--Error Message-->
+                    <span class="error" id="lastNameError"></span><br/>
+
+                    <!--LastName TextBox-->  
+                    <label for="lastName" class="tag">Last Name:</label>   
+
+                    <input type="text"
+                     id="lastName" 
+                     class="Input" 
+                     placeholder="Last Name eg.'Doe'"
+                      name="lastName" /><br/>
+                    
+
+                    <!--Email Input-->
+                    <span class="error" id="emailError"></span><br/>
+
+                    <label for="email" class="tag">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="Input"
+                        placeholder="Enter your Email"
+                        required
+                        pattern=".+@SomeEmail\.com$"
+                        /><br/>                    
+
+                    <!--DOB selection Box-->      
+                    <label for="dob" class="tag">Date of Birth:</label>      
+                    <input type="date" id="dob" name="dob" class="Input" required />
+                      
+                
+                    <!--Age Information-->
+                    <label for="address" class="tag">Age</label>
+                    <input type="text" id="Age" class="Input"  placeholder="AGE" style="text-align: center;" required/><br/>
+                    <span class="error" id="dobError"></span><br/>    
+
+                    <!--address information-->
+                    <h1 id="addressh1" class="Formh1"> Address</h1>
+                    <label for="address" class="tag">Address:</label><br/>
+                    <textarea id="address" class="Input" name="address"></textarea><br/>
+
+                    <!--educational Information-->
+                    <h1 id="educationh1" class="Formh1">Educational Level: </h1>
+                    <label for="education" class="tag">Educational Level:</label>
+                    <select id="education" class="Input" name="education" required>
+                        <option value="">Select Level</option>
+                        <option value="primary">Primary</option>
+                        <option value="secondary">Secondary</option>
+                        <option value="tertiary">Tertiary</option>
+                      </select>
+                    <span class="error" id="educationError"></span><br/>
+
+                    <!--Registration Button-->
+                    <button type="button" class="reg-btn button" id="Registrationb" onclick="Register()">Register</button>
+                
+                </div>    
+            </form>
+
+            </div>
+            <!--welcome section of the form-->
+            <div id="Welcome">
+                <div id="Border">`
+                    <div id="header">
+                        <div id="1text">
+                            <h1 class="welcome-text" id="text-welcome">Welcome</h1>
+                        </div>
+                        <div id="1text">
+                            <h1 class="welcome-text" id="text-to">To</h1>
+                        </div>
+                        <div id="1text">
+                            <h1 class="welcome-text" id="text-jeapory">Jeapordy</h1>
+                        </div>
+                    </div> 
+                    <div class="play-end-box">
+                        <!--Play game Button-->
+                        <button class="button" id="playBtn" onclick="PlayGame()" >Play</button>
+
+                        <!--exit game-->
+                        <button class="button" id="endGameBtn" onclick="endGame()" disabled>End Game</button>
+                    </div>    
+
+                    <div class="result-box">
+                    <!--Result Button-->
+                    <button class="button" id="resultBtn"  onclick="endGame()" disabled>Result</button>
+                    </div>
+                
+                    </diV>
+                </div>
+            </div>
+        </div>        
+
+       
+        
+        <script src="indextest2.js" async defer></script>
+    </body>
+</html>
